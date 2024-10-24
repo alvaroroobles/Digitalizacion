@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b7e1dd; /* Verde claro acorde al header y footer */
+}
+
+header {
+    background-color: #2a9d8f; /* Verde fútbol */
+    color: white;
+    text-align: center;
+    padding: 40px; /* Aumentar el padding para hacer la cabecera más grande */
+    border-bottom: 5px solid #264653; /* Color de línea */
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para un look moderno */
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em; /* Aumentar el tamaño del encabezado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 1.8em; /* Aumentar tamaño del subtítulo */
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits, .testimonials, .cta, .faq {
+    margin-top: 20px;
+}
+
+.benefits h3, .testimonials h3, .cta h3, .faq h3 {
+    font-size: 1.8em; /* Tamaño de fuente más grande */
+    color: #264653; /* Color oscuro */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.benefits h3::after, .testimonials h3::after, .cta h3::after, .faq h3::after {
+    content: '';
+    display: block;
+    width: 50px; /* Ancho de la línea */
+    height: 4px; /* Alto de la línea */
+    background: #2a9d8f; /* Color de la línea */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Ubicación en la parte inferior */
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits li {
+    padding: 5px 0;
+    background: #264653; /* Color oscuro */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.benefits img {
+    width: 100%; /* Ancho completo */
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    margin-top: 15px; /* Espacio encima de la imagen */
+}
+
+.testimonials blockquote {
+    border-left: 4px solid #2a9d8f;
+    padding-left: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.cta {
+    text-align: center;
+    background-color: #f1faee; /* Fondo claro para resaltar */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cta-button {
+    background-color: #e76f51; /* Color naranja */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d05e4b; /* Color naranja más oscuro al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 10px; /* Reducir el padding del pie de página */
+    background-color: #2a9d8f;
+    color: white;
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+
+.contact-form {
+    margin: 20px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 70%; /* Reducir el ancho del formulario */
+    padding: 8px; /* Reducir el padding de los campos */
+    margin: 8px 0; /* Reducir los márgenes */
+    border: 2px solid #264653; /* Borde oscuro */
+    border-radius: 5px;
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+
+.contact-form button {
+    background-color: #e76f51;
+    color: white;
+    padding: 8px 16px; /* Reducir el padding del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+
+.contact-form button:hover {
+    background-color: #d05e4b;
+}
