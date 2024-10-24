@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b7e1dd; /* Verde claro acorde al header y footer */
+    background-color: white; /* Cambiado a blanco */
 }
 
 header {
