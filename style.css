@@ -1,154 +1,352 @@
+/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: white; /* Cambiado a blanco */
+    font-family: 'Montserrat', sans-serif;
+    color: #f0f0f0; /* Texto en color claro */
+    background: url('wallpaperflare.com_wallpaper.jpg') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    line-height: 1.6;
 }
-
+/* Cabecera */
 header {
-    background-color: #2a9d8f; /* Verde fútbol */
-    color: white;
-    text-align: center;
-    padding: 40px; /* Aumentar el padding para hacer la cabecera más grande */
-    border-bottom: 5px solid #264653; /* Color de línea */
-}
-
-.header-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados para un look moderno */
-}
-
-h1 {
-    margin: 0;
-    font-size: 3em; /* Aumentar el tamaño del encabezado */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    margin: 10px 0;
-    font-weight: 300;
-    font-size: 1.8em; /* Aumentar tamaño del subtítulo */
-}
-
-section {
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.benefits, .testimonials, .cta, .faq {
-    margin-top: 20px;
-}
-
-.benefits h3, .testimonials h3, .cta h3, .faq h3 {
-    font-size: 1.8em; /* Tamaño de fuente más grande */
-    color: #264653; /* Color oscuro */
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.benefits h3::after, .testimonials h3::after, .cta h3::after, .faq h3::after {
-    content: '';
-    display: block;
-    width: 50px; /* Ancho de la línea */
-    height: 4px; /* Alto de la línea */
-    background: #2a9d8f; /* Color de la línea */
-    position: absolute;
-    left: 0;
-    bottom: 0; /* Ubicación en la parte inferior */
-}
-
-.benefits ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.benefits li {
-    padding: 5px 0;
-    background: #264653; /* Color oscuro */
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.benefits img {
-    width: 100%; /* Ancho completo */
-    height: auto;
-    border-radius: 5px; /* Bordes redondeados para la imagen */
-    margin-top: 15px; /* Espacio encima de la imagen */
-}
-
-.testimonials blockquote {
-    border-left: 4px solid #2a9d8f;
-    padding-left: 20px;
-    font-style: italic;
-    color: #555;
-}
-
-.cta {
-    text-align: center;
-    background-color: #f1faee; /* Fondo claro para resaltar */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.cta-button {
-    background-color: #e76f51; /* Color naranja */
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #d05e4b; /* Color naranja más oscuro al pasar el ratón */
-}
-
-footer {
-    text-align: center;
-    padding: 10px; /* Reducir el padding del pie de página */
-    background-color: #2a9d8f;
-    color: white;
-    font-size: 0.9em; /* Tamaño de fuente más pequeño */
-}
-
-.contact-form {
-    margin: 20px 0;
-}
-
-.contact-form form {
+    background-image: url('bernabeu.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f0f0f0;
 }
 
-.contact-form input, 
-.contact-form textarea {
-    width: 70%; /* Reducir el ancho del formulario */
-    padding: 8px; /* Reducir el padding de los campos */
-    margin: 8px 0; /* Reducir los márgenes */
-    border: 2px solid #264653; /* Borde oscuro */
+.header-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #1a1a1a; /* Fondo más cercano al color de fondo de la página */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #333; /* Fondo más claro al pasar el cursor */
     border-radius: 5px;
-    font-size: 0.9em; /* Tamaño de fuente más pequeño */
 }
 
-.contact-form button {
-    background-color: #e76f51;
-    color: white;
-    padding: 8px 16px; /* Reducir el padding del botón */
+/* Secciones */
+.section h2 {
+    font-size: 2.5em;
+    color: #fff; /* Texto en blanco */
+    background: linear-gradient(135deg, #ff7f50, #ff4500, #ffd700); /* Gradiente de colores vibrantes */
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra para resaltar */
+}
+
+/* Fondo de las secciones para que no se vea tan plano */
+.section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #181818; /* Fondo oscuro */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background: #2a2a2a; /* Fondo de tarjeta oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #ffd700; /* Color llamativo */
+}
+
+.card p {
+    color: #e0e0e0;
+    font-size: 0.95em;
+    margin: 10px 0 15px;
+}
+
+.card button {
+    background-color: #ff4500;
+    color: #f0f0f0;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    transition: background 0.3s;
 }
 
-.contact-form button:hover {
-    background-color: #d05e4b;
+.card button:hover {
+    background-color: #ff6500;
+}
+
+/* Estilo del formulario */
+form {
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #181818; /* Fondo oscuro solo en el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Campos del formulario */
+form label {
+    margin-bottom: 5px;
+    color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #2a2a2a;
+    color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    background-color: #ff4500;
+    color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #ff6500;
+}
+
+
+/* Pie de página */
+.footer {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Asegura que los íconos sean visibles en el fondo oscuro */
+}
+
+/* Sección de servicios (nuevo estilo sin bordes marcados) */
+.servicio-contenedor {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Sección Servicios */
+.servicios {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: none; /* Eliminamos el fondo negro de toda la sección */
+}
+
+.servicios h2 {
+    font-size: 2em;
+    color: #ffd700; /* Color vibrante para el encabezado */
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.servicio-contenedor {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos de las tarjetas dentro de la sección servicios */
+.servicio {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    margin: 15px;
+    background: #181818; /* Fondo de las tarjetas */
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+.servicio-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover .servicio-imagen {
+    transform: scale(1.1);
+}
+
+.servicio-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro solo en la parte inferior de las tarjetas */
+    color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.servicio-texto h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+
+.contacto {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: none; /* Eliminamos el fondo negro de toda la sección */
+}
+
+/* Estilo del encabezado de la sección de contacto */
+.contacto h2 {
+    font-size: 2em;
+    color: #ffd700; /* Color vibrante para el encabezado */
+    margin-bottom: 20px;
+}
+/* Sección Productos Destacados */
+.productos {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: none; /* Eliminamos el fondo negro de toda la sección */
+}
+
+.productos h2 {
+    font-size: 2em;
+    color: #ffd700; /* Color vibrante para el encabezado */
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.producto-contenedor {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos de las tarjetas dentro de la sección productos destacados */
+.producto {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    margin: 15px;
+    background: #181818; /* Fondo de las tarjetas */
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover .producto-imagen {
+    transform: scale(1.1);
+}
+
+.producto-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro solo en la parte inferior de las tarjetas */
+    color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.producto-texto h3 {
+    margin: 0;
+    font-size: 1.2em;
 }
