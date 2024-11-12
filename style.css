@@ -66,7 +66,7 @@ header {
     text-align: center;
     border-radius: 10px;
     display: inline-block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra para resaltar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave para resaltar */
 }
 
 /* Fondo de las secciones para que no se vea tan plano */
