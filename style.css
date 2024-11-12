@@ -57,27 +57,48 @@ header {
     border-radius: 5px;
 }
 
-/* Secciones */
-.section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #181818; /* Fondo negro de las secciones */
+.servicio {
+    position: relative;
+    width: 350px; /* Aumentar el ancho de las tarjetas */
+    height: 250px; /* Aumentar la altura de las tarjetas */
+    overflow: hidden;
     border-radius: 10px;
-    margin-bottom: 20px;
+    transition: transform 0.3s;
+    margin: 20px;
+    background: #181818; /* Fondo que coincide con el resto del contenido */
 }
 
-/* Fondo vistoso para los encabezados, pero el resto de la sección sigue con fondo negro */
-.section h2 {
-    font-size: 2.5em;
-    color: #fff; /* Texto en blanco */
-    background: linear-gradient(135deg, #ff7f50, #ff4500, #ffd700); /* Gradiente de colores vibrantes */
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave para resaltar */
+.servicio:hover {
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el ratón */
 }
+
+.servicio-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover .servicio-imagen {
+    transform: scale(1.15); /* Efecto al pasar el ratón en la imagen */
+}
+
+.servicio-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.servicio-texto h3 {
+    margin: 0;
+    font-size: 1.4em; /* Aumentar el tamaño del texto */
+}
+
 
 .card-container {
     display: flex;
@@ -198,7 +219,6 @@ form button:hover {
 .footer .social-icons img {
     width: 24px;
     height: 24px;
-    filter: brightness(0) invert(1); /* Asegura que los íconos sean visibles en el fondo oscuro */
 }
 
 /* Sección de servicios (nuevo estilo sin bordes marcados) */
@@ -351,4 +371,73 @@ form button:hover {
 .producto-texto h3 {
     margin: 0;
     font-size: 1.2em;
+}
+/* Estilo de la sección de Introducción */
+#introduccion {
+    padding: 40px 20px;
+    color: #f0f0f0; /* Texto en blanco */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#introduccion h2 {
+    font-size: 1.5em;
+    color: #000000; /* Color blanco para el encabezado */
+    margin-bottom: 20px;
+}
+
+#introduccion p {
+    font-size: 1.1em;
+    color: #e0e0e0; /* Texto en gris claro para los párrafos */
+    line-height: 1.8;
+}
+/* Estilo para el encabezado de Introducción y la línea debajo */
+.section h2 {
+    font-size: 2.5em; /* Ajusta el tamaño de la fuente */
+    color: #fff; /* Color del texto */
+    display: inline-block;
+    margin-bottom: 10px; /* Espacio debajo del título */
+    position: relative; /* Necesario para posicionar la línea */
+}
+
+.section h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Creación de la línea horizontal */
+.section h2::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 30px; /* Grosor de la línea */
+    background-color: #ff4500; /* Color de la línea */
+    z-index: -1;
+}
+
+/* Ajuste para la palabra en el centro */
+.section h2 span {
+    background-color: #121212; /* Fondo oscuro de la sección */
+    padding: 0 10px; /* Espaciado a los lados del texto */
+    position: relative;
+    z-index: 1;
+}
+section p {
+    background-color: #2a2a2a; /* Fondo oscuro similar a otras secciones */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #f0f0f0; /* Texto claro */
+    font-size: 1em; /* Tamaño de texto consistente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    max-width: 1200px; /* Ancho máximo para alinearlo con el contenido */
+    margin: 20px auto; /* Centrado en la página */
 }
