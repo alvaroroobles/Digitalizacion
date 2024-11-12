@@ -407,7 +407,7 @@ form button:hover {
     position: relative;
     font-size: 1.5em;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -420,13 +420,12 @@ form button:hover {
     left: 0;
     width: 100%;
     height: 30px; /* Grosor de la línea */
-    background-color: #ff4500; /* Color de la línea */
     z-index: -1;
 }
 
 /* Ajuste para la palabra en el centro */
 .section h2 span {
-    background-color: #121212; /* Fondo oscuro de la sección */
+    background-color: #fffefe; /* Fondo oscuro de la sección */
     padding: 0 10px; /* Espaciado a los lados del texto */
     position: relative;
     z-index: 1;
@@ -440,4 +439,8 @@ section p {
     line-height: 1.6; /* Espaciado entre líneas */
     max-width: 1200px; /* Ancho máximo para alinearlo con el contenido */
     margin: 20px auto; /* Centrado en la página */
+    text-align: center;
+}
+#introduccion h2 {
+    color: #ffffff; /* Cambia el color de la palabra a blanco */
 }
