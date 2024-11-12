@@ -58,6 +58,16 @@ header {
 }
 
 /* Secciones */
+.section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #181818; /* Fondo negro de las secciones */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Fondo vistoso para los encabezados, pero el resto de la sección sigue con fondo negro */
 .section h2 {
     font-size: 2.5em;
     color: #fff; /* Texto en blanco */
@@ -67,16 +77,6 @@ header {
     border-radius: 10px;
     display: inline-block;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave para resaltar */
-}
-
-/* Fondo de las secciones para que no se vea tan plano */
-.section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #181818; /* Fondo oscuro */
-    border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .card-container {
@@ -90,7 +90,8 @@ header {
     background: #2a2a2a; /* Fondo de tarjeta oscuro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 300px;
+    max-width: 400px; /* Aumentar el ancho máximo */
+    height: 500px; /* Aumentar la altura */
     overflow: hidden;
     transition: transform 0.3s;
     margin: 20px;
@@ -102,12 +103,12 @@ header {
 
 .card-image {
     width: 100%;
-    height: 180px;
+    height: 250px; /* Aumentar la altura de la imagen */
     object-fit: cover;
 }
 
 .card-content {
-    padding: 15px;
+    padding: 20px; /* Aumentar el padding para el contenido */
     text-align: center;
 }
 
@@ -117,14 +118,14 @@ header {
 
 .card p {
     color: #e0e0e0;
-    font-size: 0.95em;
+    font-size: 1em; /* Ajustar el tamaño del texto */
     margin: 10px 0 15px;
 }
 
 .card button {
     background-color: #ff4500;
     color: #f0f0f0;
-    padding: 10px 15px;
+    padding: 15px 20px; /* Aumentar el tamaño del botón */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -134,6 +135,7 @@ header {
 .card button:hover {
     background-color: #ff6500;
 }
+
 
 /* Estilo del formulario */
 form {
