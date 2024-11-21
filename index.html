@@ -3,73 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Tu Página</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Cabecera -->
     <header>
-        <h1>Tu Nombre</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header-overlay">
+            <h1>Bienvenidos al Sitio</h1>
+            <p>Tu lugar para los mejores productos y servicios</p>
+        </div>
     </header>
 
-    <section id="inicio">
-        <h2>Bienvenido a mi página personal</h2>
-        <p>Una breve introducción sobre ti.</p>
-    </section>
-
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Biografía y experiencia profesional.</p>
-        <h3>Habilidades</h3>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
         <ul>
-            <li>Habilidad 1</li>
-            <li>Habilidad 2</li>
-            <li>Habilidad 3</li>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
+    </nav>
+
+    <!-- Sección Introducción -->
+    <section id="introduccion" class="section ">
+        <h2>Introducción</h2>
+        <p>El fútbol no es solo un deporte, es una pasión que conecta a millones de personas en todo el mundo. 
+            Cada estadio guarda historias de triunfos, derrotas y momentos inolvidables que emocionan a generaciones. 
+            Aquí, te acercamos a esa experiencia única, desde visitas a estadios emblemáticos hasta colecciones exclusivas que celebran la esencia del fútbol.
+            Nuestra misión es llevarte más allá del juego, ofreciéndote vivencias que quedarán en tu memoria. 
+            Ya sea vibrando con un partido en vivo o descubriendo los secretos de los clubes más legendarios, queremos que formes parte de esta pasión.</p>
     </section>
 
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <p>Descripción de los servicios que ofreces.</p>
+    <!-- Sección Productos -->
+    <section id="productos" class="section productos">
+        <h2>Productos Destacados</h2>
+        <div class="productos-container">
+            <div class="card-container">
+                <div class="card">
+                    <img src="granada.jpg" alt="Producto 1" class="card-image">
+                    <div class="card-content">
+                        <h3>Visitas a Estadios</h3>
+                        <p>Desde los mas recónditos hasta los mas grandes del planeta</p>
+                        <button>Ver más</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="camiseta.jpg" alt="Producto 2" class="card-image">
+                    <div class="card-content">
+                        <h3>Camisetas Originales</h3>
+                        <p>¡Con Suerte te podrá tocar una firma original!</p>
+                        <button>Ver más</button>
+                    </div>
+                </div>
+                <!-- Agregar más productos aquí -->
+            </div>
+        </div>
     </section>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <p>Galería de trabajos anteriores.</p>
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section servicios">
+        <h2>Servicios Exclusivos</h2>
+        <div class="servicio-contenedor">
+            <div class="servicio">
+                <img src="avion.jpeg" alt="Servicio 1" class="servicio-imagen">
+                <div class="servicio-texto">
+                    <h3>Vuelos en primera clase  junto con alojamientos</h3>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="ticket.jpg" alt="Servicio 2" class="servicio-imagen">
+                <div class="servicio-texto">
+                    <h3>Asientos Vip con vistas espectaculares</h3>
+                </div>
+            </div>
+            <div class="servicio">
+                <img src="virtual.jpg" alt="Servicio 3" class="servicio-imagen">
+                <div class="servicio-texto">
+                    <h3>Tour guiados virtualmente</h3>
+                </div>
+            </div>
+            <!-- Agregar más servicios aquí -->
+        </div>
     </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Artículos sobre temas relevantes en tu sector.</p>
-    </section>
-
-    <section id="contacto">
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section contacto">
         <h2>Contacto</h2>
-        <form>
+        <form action="#" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
-        <p>Sígueme en: 
-            <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>, 
-            <a href="https://twitter.com/tu-perfil" target="_blank">Twitter</a>
-        </p>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 Tu Página. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><img src="logofb.png" alt="Facebook"></a>
+            <a href="#"><img src="logoinsta.png" alt="Twitter"></a>
+            <a href="#"><img src="logotwitter.jpg" alt="Instagram"></a>
+        </div>
     </footer>
+
 </body>
 </html>
